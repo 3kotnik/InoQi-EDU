@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InoQi EDU - Stran v posodabljanju</title>
+    <meta name="description" content="InoQi EDU stran je trenutno v posodabljanju. Pošljite nam sporočilo in vrnite se kasneje za najnovejše vsebine.">
+    <meta name="keywords" content="inoqi, InoQi EDU, posodabljanje, izobraževanje, storitve">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="prijavnica.css">
+</head>
+<body>
+    <header>
+        <a href="#" id="login-link">Login</a>
+    </header>
+    <main>
+        <form action="sendmail.php" method="POST" class="email-form">
+            <div class="form-card">
+                <label for="name">Ime</label>
+                <input type="text" id="name" name="name" placeholder="Vaše ime" required>
+                <label for="email">E-pošta</label>
+                <input type="email" id="email" name="email" placeholder="Vaš e-poštni naslov" required>
+                <label for="message">Sporočilo</label>
+                <textarea id="message" name="message" placeholder="Vaše sporočilo" required></textarea>
+                <button type="submit">Pošlji</button>
+            </div>
+        </form>
+    </main>
+    <script src="prijavnica.js"></script>
+</body>
+</html>

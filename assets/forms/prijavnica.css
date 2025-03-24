@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #212121;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#login-link {
+    font-size: 0.9rem;
+    color: #6200ee;
+    text-decoration: none;
+}
+
+#login-link:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.email-form {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.form-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.email-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.email-form input,
+.email-form textarea {
+    width: 100%;
+    padding: 12px; /* Consistent padding on all sides */
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn’t increase width */
+}
+
+.email-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.email-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6200ee;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+    background-color: #3700b3;
+}

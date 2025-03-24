@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijavnica</title>
+    <meta name="description" content="Prijavnica za InoQi EDU delavnice.">
+    <meta name="keywords" content="inoqi, InoQi EDU, izobraževanje, storitve">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Example_content.css">
+</head>
+<body>
+    <header>
+        <a href="#" id="login-link">Login</a>
+    </header>
+    <main>
+           <div class="form-wrapper">
+                <h2>Prijavi se</h2>
+                <form class="application-form">
+                    <div class="form-row">
+                        <label for="name">Ime:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="surname">Priimek:</label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="age">Starost:</label>
+                        <input type="number" id="age" name="age" min="6" max="99" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="workshop">Izbrana delavnica:</label>
+                        <select id="workshop" name="workshop" required>
+                            <option value="">Izberi delavnico</option>
+                            <option value="KidoKoda">KidoKoda</option>
+                            <option value="Prvi koraki">Prvi virtualni koraki</option>
+                            <option value="Robotske avanture">Robotske avanture</option>
+                            <option value="3D umetniki">3D umetniki</option>
+                            <option value="XR svetovi">XR svetovi</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Telefon:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="disclaimer">
+                        Vaši osebni podatki bodo uporabljeni v skladu z našo politiko zasebnosti in pogoji prijave.
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="button">Pošlji prijavo</button>
+                    </div>
+                </form>
+            </div>
+    </main>
+</body>
+</html>

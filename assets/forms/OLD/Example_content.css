@@ -1,0 +1,74 @@
+/* ========================================
+   FORM STYLES
+   ======================================== */
+.form-wrapper {
+    max-width: var(--form-max);
+    margin: 0 auto;
+}
+
+.application-form,
+.contact-form {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.form-row {
+    margin-bottom: 1.75rem;
+}
+
+    .form-row label {
+        display: block;
+        margin-bottom: 0.75rem;
+        font-weight: 500;
+        color: var(--secondary);
+    }
+
+    .form-row input,
+    .form-row select,
+    .form-row textarea {
+        width: 100%;
+        padding: 0.85rem 1rem;
+        border: 1px solid #e2e2e2;
+        border-radius: var(--radius);
+        font-size: 1rem;
+        font-family: inherit;
+        transition: border-color var(--trans), box-shadow var(--trans);
+    }
+
+        .form-row input:focus,
+        .form-row select:focus,
+        .form-row textarea:focus {
+            outline: none;
+            border-color: #d8d8d8;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-row input.error,
+        .form-row select.error,
+        .form-row textarea.error {
+            border-color: var(--primary);
+            background-color: rgba(255, 90, 95, 0.05);
+        }
+
+    .form-row textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+.disclaimer {
+    font-size: var(--fs-small);
+    color: #666;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: var(--radius);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
